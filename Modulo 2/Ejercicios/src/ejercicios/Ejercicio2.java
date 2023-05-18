@@ -1,3 +1,6 @@
+/* Escribir un programa que pida tu nombre, lo guarde en una variable y lo muestre por
+pantalla. */
+
 package Ejercicios;
 import java.util.Scanner;
 
