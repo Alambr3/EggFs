@@ -18,7 +18,7 @@ public class Ejercicios13 {
         
         for (int i = 0; i < dim; i++) {
             for (int j = 0; j < dim; j++) {
-               if (i > 0 && i < dim-1 && j > 0 && j < dim-1) {
+               if (i > 0 && i < dim - 1 && j > 0 && j < dim - 1) {
                    System.out.print(" ");
                } else {
                    System.out.print("*");
@@ -26,5 +26,5 @@ public class Ejercicios13 {
             }
             System.out.println("");
         }
-    }   
+    }  
 }

@@ -24,54 +24,54 @@ public class Ejercicios11 {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         
-        int opc;
-        float res;
+        int opc, num1, num2;
         char opcL = 'n';
-        
-        System.out.println("Ingrese numero 1");
-        int num1 = leer.nextInt();
-        System.out.println("Ingrese numero 2");
-        int num2 = leer.nextInt();
+        float res;
         
         do {
-        System.out.println("MENU");
-        System.out.println("");
-        System.out.println("1- Sumar");
-        System.out.println("2- Restar");
-        System.out.println("3- Multiplicar");
-        System.out.println("4- Divir");
-        System.out.println("5- Salir");
-        System.out.println("");
-        System.out.println("Ingrese su opcion");
-        opc = leer.nextInt();
+            System.out.println("Ingrese numero 1");
+            num1 = leer.nextInt();
+        } while (num1 < 1);
+        do {
+            System.out.println("Ingrese numero 2");
+            num2 = leer.nextInt();
+        } while (num2 < 1);
         
-        switch (opc) {
-            case 1:
-                res = num1 + num2;
-                System.out.println(num1 + " + " + num2 + " = " + res);
-                continue;
-            case 2:
-                res = num1 - num2;
-                System.out.println(num1 + " - " + num2 + " = " + res);
-                continue;
-            case 3:
-                res = num1 * num2;
-                System.out.println(num1 + " * " + num2 + " = " + res);
-                continue;
-            case 4:
-                res = num1 / num2;
-                System.out.println(num1 + " / " + num2 + " = " + res);
-                continue;
-            case 5:
-                System.out.println("¿Esta seguro que desea salir? s/n");
-                opcL = leer.next().charAt(0);
-        }
+        do {
+            System.out.println("-------------------");
+            System.out.println("       MENU");
+            System.out.println("");
+            System.out.println("1- Sumar");
+            System.out.println("2- Restar");
+            System.out.println("3- Multiplicar");
+            System.out.println("4- Divir");
+            System.out.println("5- Salir");
+            System.out.println("-------------------");
+            System.out.println("Ingrese su opcion");
+            opc = leer.nextInt();
         
-      /*/  if (opc == 5) {
-             System.out.println("¿Esta seguro que desea salir? s/n");
-             opcL = leer.next().charAt(0);
-        }/*/
-        } while (opc != 5 && opcL == 'n');
+            switch (opc) {
+                case 1:
+                    System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+                    break;
+                case 2:
+                    System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+                    break;
+                case 3:
+                    System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+                    break;
+                case 4:
+                    res = (float) num1 / num2;
+                    System.out.println(num1 + " / " + num2 + " = " + res);
+                    break;
+                case 5:
+                    System.out.println("¿Esta seguro que desea salir? s/n");
+                    opcL = leer.next().charAt(0);
+                default:
+                    System.out.println("Opcion incorrecta");
+            }
+       
+        } while (opc != 5 && opcL == 'n' || opcL == 'N');
        
     }
  
