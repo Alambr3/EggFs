@@ -13,8 +13,8 @@ public class Ejercicios15 {
             nums[i] = i + 1;
         }
         
-        for (int i = 100; i > 0; i--){
-            System.out.print(nums[i] + " ");
+        for (int i = 99; i > 0-1; i--){
+            System.out.println(nums[i] + " ");
         }
     }
     
