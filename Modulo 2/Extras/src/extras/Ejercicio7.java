@@ -31,7 +31,7 @@ public class Ejercicio7 {
         }
         }
         
-        System.out.println("El promedio de los valores es: " + (double) (total/cant));
+        System.out.println("El promedio de los valores es: " + (double) ( total/cant));
         System.out.println("El valor maximo es: " + max);
         System.out.println("El valor minimoo es: " + min);
     }
