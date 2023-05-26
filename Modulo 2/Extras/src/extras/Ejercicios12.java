@@ -10,13 +10,31 @@ Ejemplo:
 0-1-E */
 
 package extras;
-import java.util.Scanner;
 
 public class Ejercicios12 {
 
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in); 
         
+        int a = 0, b = 0, c = 0;
+        String numCadena1, numCadena2, numCadena3;
         
+        for (int i = 0; i < 10; i++){
+             for (int j = 0; j < 10; j++) {
+                  for (int k = 0; k < 10; k++){
+                       if (i == 3) {
+                          System.out.println("E" + "-" + j + "-" + k); 
+                       }
+                       if (j == 3) {
+                          System.out.println(i + "-" + "E" + "-" + k); 
+                       }
+                       if (k == 3) {
+                          System.out.println(i + "-" + j + "-" + "E"); 
+                       } 
+                       if (i != 3 && j != 3 && k != 3){
+                       System.out.println(i + "-" + j + "-" + k);
+                       }
+                  }
+             }
+        }
     }
 }
