@@ -10,7 +10,7 @@ public class Ejercicio1 {
     }
 
     public static void generarLibro() {
-        Scanner leer = new Scanner(System.in);
+        Scanner leer = new Scanner(System.in).useDelimiter("/n");
         Libro libro1 = new Libro(leer.next(), leer.next(), leer.next(), leer.nextInt());
         mostrarLibro(libro1);
     }

@@ -61,7 +61,7 @@ public class Operacion {
         if (num1 != 0 && num2 != 0) {
             return (double) num1 / (double) num2;
         } else {
-            System.out.println("Error al multiplicar por 0");
+            System.out.println("Error al dividir por 0");
             return 0;
         }
     }
